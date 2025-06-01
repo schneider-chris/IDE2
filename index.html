@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDE</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Livraria IDE</div>
+        <div class="slogan">Encontre inspiração e sabedoria em nossa coleção</div>
+    </header>
+
+    <!-- Barra de Pesquisa -->
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Pesquise por título, autor ou assunto...">
+    </div>
+
+    <!-- Destaques -->
+    <div class="books-container">
+        <h2 class="section-title">Livros em Destaque</h2>
+        <div class="books-carousel" id="carousel1">
+    <!-- Livro 1 -->
+    <div class="book" onclick="openModal('modal1')">
+        <div class="book-cover">
+            <img src="./img/biblia.jpg" alt="Capa do livro">
+        </div>
+        <div class="book-title">Biblia Pastoral</div>
+        <div class="book-author">Paulus Editora</div>
+    </div>
+    <!-- Livro 2 -->
+    <div class="book" onclick="openModal('modal2')">
+        <div class="book-cover">
+            <img src="./img/biblia e.jpg" alt="Capa do livro">
+        </div>
+        <div class="book-title">Biblia Sagrada</div>
+        <div class="book-author">NVI</div>
+    </div>
+    <!-- Livro 3 -->
+    <div class="book" onclick="openModal('modal3')">
+        <div class="book-cover">
+            <img src="./img/cic.jpg" alt="Capa do livro">
+        </div>
+        <div class="book-title">Catecismo da Igreja Católica</div>
+        <div class="book-author">CNBB</div>
+    </div>
+    <!-- Livro 4 -->
+    <div class="book" onclick="openModal('modal4')">
+        <div class="book-cover">
+            <img src="./img/orando a palavra.jpg" alt="Capa do livro">
+        </div>
+        <div class="book-title">Orando a Palavra</div>
+        <div class="book-author">Spurgeon, Bounds, Torrey</div>
+    </div>
+
+    <!-- Livro 5 -->
+    <div class="book" onclick="openModal('modal5')">
+        <div class="book-cover">
+            <img src="./img/orando a palavra.jpg" alt="Capa do livro">
+        </div>
+        <div class="book-title"></div>
+        <div class="book-author">Spurgeon, Bounds, Torrey</div>
+    </div>
+
+    <!-- Livro  -->
+    <div class="book" onclick="openModal('modal6')">
+        <div class="book-cover">
+            <img src="./img/orando a palavra.jpg" alt="Capa do livro">
+        </div>
+        <div class="book-title"></div>
+        <div class="book-author">Spurgeon, Bounds, Torrey</div>
+    </div>
+        </div>
+    
+    <div class="carousel-nav">
+        <button class="carousel-btn" onclick="scrollCarousel('carousel1', -200)">← Anterior</button>
+        <button class="carousel-btn" onclick="scrollCarousel('carousel1', 200)">Próximo →</button>
+    </div>
+    
+    <!-- Novidades -->
+    <div class="books-container">
+        <h2 class="section-title">Livros Católicos</h2>
+        <div class="books-carousel" id="carousel2">
+    <!-- Livro 7 -->
+    <div class="book" onclick="openModal('modal7')">
+        <div class="book-cover">
+            <img src="./img/hua.jpg" alt="Capa do livro">
+        </div>
+        <div class="book-title">História de uma Alma</div>
+        <div class="book-author">Editora Vozes </div>
+    </div>
+    <!-- Livro 8 -->
+    <div class="book" onclick="openModal('modal8')">
+        <div class="book-cover">
+            <img src="./img/tsvm.jpg" alt="Capa do livro">
+        </div>
+        <div class="book-title">Tratado da Virgem Maria</div>
+        <div class="book-author">Editora Vozes</div>
+    </div>
+    <!-- Livro 9 -->
+    <div class="book" onclick="openModal('modal9')">
+        <div class="book-cover">
+            <img src="./img/confissoes.jpg" alt="Confissões">
+        </div>
+        <div class="book-title">Confissões</div>
+        <div class="book-author">Editora Principis</div>
+    </div>
+    <!-- Livro 10 -->
+    <div class="book" onclick="openModal('modal10')">
+        <div class="book-cover">
+            <img src="./img/rpc.jpg" alt="Capa do livro">
+        </div>
+        <div class="book-title">Razões para Crer</div>
+        <div class="book-author">Editora Cleófas</div>
+    </div>
+    <!-- Livro 11 -->
+    <div class="book" onclick="openModal('modal11')">
+        <div class="book-cover">
+            <img src="./img/banquete do cordeiro.jpg" alt="Capa do livro">
+        </div>
+        <div class="book-title">O Banquete do Cordeiro</div>
+        <div class="book-author">Editora Loyola</div>
+    </div>
+    <!-- Livro 12 -->
+    <div class="book" onclick="openModal('modal12')">
+        <div class="book-cover">
+            <img src="./img/oaqdav.jpg" alt="Capa do livro">
+        </div>
+        <div class="book-title">O amor que dá a vida</div>
+        <div class="book-author">Editora Quadrante</div>
+    </div>
+    </div>
+
+    <div class="carousel-nav">
+        <button class="carousel-btn" onclick="scrollCarousel('carousel1', -200)">← Anterior</button>
+        <button class="carousel-btn" onclick="scrollCarousel('carousel1', 200)">Próximo →</button>
+    </div>
+
+</body>
+</html>
