@@ -3,140 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDE</title>
+    <title>Livros Cristãos - Sua Loja de Livros Inspiradores</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+    <!-- Cabeçalho -->
     <header>
-        <div class="logo">Livraria IDE</div>
+        <div class="logo">Livros Cristãos</div>
         <div class="slogan">Encontre inspiração e sabedoria em nossa coleção</div>
     </header>
-
+    
     <!-- Barra de Pesquisa -->
     <div class="search-container">
         <input type="text" class="search-bar" placeholder="Pesquise por título, autor ou assunto...">
     </div>
-
+    
     <!-- Destaques -->
     <div class="books-container">
         <h2 class="section-title">Livros em Destaque</h2>
         <div class="books-carousel" id="carousel1">
-    <!-- Livro 1 -->
-    <div class="book" onclick="openModal('modal1')">
-        <div class="book-cover">
-            <img src="./img/biblia.jpg" alt="Capa do livro">
+            <!-- Livro 1 -->
+            <div class="book" onclick="openModal('modal1')">
+                <div class="book-cover">
+                    <img src="./img/biblia e.jpg" alt="Capa do livro">
+                </div>
+                <div class="book-title">Bibla Sagrada</div>
+                <div class="book-author">NIV</div>
+            </div>
+            
+            <!-- Livro 2 -->
+            <div class="book" onclick="openModal('modal2')">
+                <div class="book-cover">
+                    <img src="./img/biblia.jpg" alt="Capa do livro">
+                </div>
+                <div class="book-title">Biblia Pastoral</div>
+                <div class="book-author">Renato e Cristiane Cardoso</div>
+            </div>
+            
+            <!-- Livro 3 -->
+            <div class="book" onclick="openModal('modal3')">
+                <div class="book-cover">
+                    <img src="./img/cic.jpg" alt="Capa do livro">
+                </div>
+                <div class="book-title">Catecismo da Igreja Católica</div>
+                <div class="book-author">CNBB</div>
+            </div>
+            
+            <!-- Livro 5 -->
+            <div class="book" onclick="openModal('modal5')">
+                <div class="book-cover">
+                    <img src="./img/destroi sonhos.jpg" alt="Capa do livro">
+                </div>
+                <div class="book-title">O Deus que destroi sonhos</div>
+                <div class="book-author">Rodrigo Bibo</div>
+            </div>
+            
+            <!-- Livro 6 -->
+            <div class="book" onclick="openModal('modal6')">
+                <div class="book-cover">
+                    <img src="./img/cristao inutil.jpg" alt="Capa do livro">
+                </div>
+                <div class="book-title">Como se tornar um cristão inutil</div>
+                <div class="book-author">Rodrigo Bibo</div>
+            </div>
         </div>
-        <div class="book-title">Biblia Pastoral</div>
-        <div class="book-author">Paulus Editora</div>
-    </div>
-    <!-- Livro 2 -->
-    <div class="book" onclick="openModal('modal2')">
-        <div class="book-cover">
-            <img src="./img/biblia e.jpg" alt="Capa do livro">
+        
+        <div class="carousel-nav">
+            <button class="carousel-btn" onclick="scrollCarousel('carousel1', -200)">← Anterior</button>
+            <button class="carousel-btn" onclick="scrollCarousel('carousel1', 200)">Próximo →</button>
         </div>
-        <div class="book-title">Biblia Sagrada</div>
-        <div class="book-author">NVI</div>
-    </div>
-    <!-- Livro 3 -->
-    <div class="book" onclick="openModal('modal3')">
-        <div class="book-cover">
-            <img src="./img/cic.jpg" alt="Capa do livro">
-        </div>
-        <div class="book-title">Catecismo da Igreja Católica</div>
-        <div class="book-author">CNBB</div>
-    </div>
-    <!-- Livro 4 -->
-    <div class="book" onclick="openModal('modal4')">
-        <div class="book-cover">
-            <img src="./img/orando a palavra.jpg" alt="Capa do livro">
-        </div>
-        <div class="book-title">Orando a Palavra</div>
-        <div class="book-author">Spurgeon, Bounds, Torrey</div>
-    </div>
-
-    <!-- Livro 5 -->
-    <div class="book" onclick="openModal('modal5')">
-        <div class="book-cover">
-            <img src="./img/orando a palavra.jpg" alt="Capa do livro">
-        </div>
-        <div class="book-title"></div>
-        <div class="book-author">Spurgeon, Bounds, Torrey</div>
-    </div>
-
-    <!-- Livro  -->
-    <div class="book" onclick="openModal('modal6')">
-        <div class="book-cover">
-            <img src="./img/orando a palavra.jpg" alt="Capa do livro">
-        </div>
-        <div class="book-title"></div>
-        <div class="book-author">Spurgeon, Bounds, Torrey</div>
-    </div>
-        </div>
-    
-    <div class="carousel-nav">
-        <button class="carousel-btn" onclick="scrollCarousel('carousel1', -200)">← Anterior</button>
-        <button class="carousel-btn" onclick="scrollCarousel('carousel1', 200)">Próximo →</button>
     </div>
     
     <!-- Novidades -->
     <div class="books-container">
         <h2 class="section-title">Livros Católicos</h2>
         <div class="books-carousel" id="carousel2">
-    <!-- Livro 7 -->
-    <div class="book" onclick="openModal('modal7')">
-        <div class="book-cover">
-            <img src="./img/hua.jpg" alt="Capa do livro">
+            <!-- Livro 7 -->
+            <div class="book" onclick="openModal('modal7')">
+                <div class="book-cover">
+                    <img src="./img/hua.jpg" alt="Capa do livro">
+                </div>
+                <div class="book-title">História de uma alma</div>
+                <div class="book-author"></div>
+            </div>
+            
+            <!-- Livro 8 -->
+            <div class="book" onclick="openModal('modal8')">
+                <div class="book-cover">
+                    <img src="/81YzHKeWq7L." alt="Capa do livro">
+                </div>
+                <div class="book-title">Tratado da Virgem Maria</div>
+                <div class="book-author"></div>
+            </div>
+            
+            <!-- Livro 9 -->
+            <div class="book" onclick="openModal('modal9')">
+                <div class="book-cover">
+                    <img src="/81+4JYJdXJL." alt="Capa do livro">
+                </div>
+                <div class="book-title"></div>
+                <div class="book-author"></div>
+            </div>
+            
+            <!-- Livro 10 -->
+            <div class="book" onclick="openModal('modal10')">
+                <div class="book-cover">
+                    <img src="/81WrBJdJNTL." alt="Capa do livro">
+                </div>
+                <div class="book-title">Fé Além das Circunstâncias</div>
+                <div class="book-author">Joyce Meyer</div>
+            </div>
+            
+            <!-- Livro 11 -->
+            <div class="book" onclick="openModal('modal11')">
+                <div class="book-cover">
+                    <img src="/81K5Z+5Q5BL." alt="Capa do livro">
+                </div>
+                <div class="book-title">O Poder do Silêncio</div>
+                <div class="book-author">Augusto Cury</div>
+            </div>
         </div>
-        <div class="book-title">História de uma Alma</div>
-        <div class="book-author">Editora Vozes </div>
-    </div>
-    <!-- Livro 8 -->
-    <div class="book" onclick="openModal('modal8')">
-        <div class="book-cover">
-            <img src="./img/tsvm.jpg" alt="Capa do livro">
+        
+        <div class="carousel-nav">
+            <button class="carousel-btn" onclick="scrollCarousel('carousel2', -200)">← Anterior</button>
+            <button class="carousel-btn" onclick="scrollCarousel('carousel2', 200)">Próximo →</button>
         </div>
-        <div class="book-title">Tratado da Virgem Maria</div>
-        <div class="book-author">Editora Vozes</div>
     </div>
-    <!-- Livro 9 -->
-    <div class="book" onclick="openModal('modal9')">
-        <div class="book-cover">
-            <img src="./img/confissoes.jpg" alt="Confissões">
+    
+    <!-- Modais de Sinopse -->
+    <!-- Modal 1 - A Cabana -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+            <div class="book-details">
+                <div class="book-details-cover">
+                    <img src="" alt="Capa do livro">
+                </div>
+                <div class="book-info">
+                    <h2>Catecismo da igreja Católica</h2>
+                    <h3>CNBB</h3>
+                    <div class="rating">★★★★★</div>
+                    <p class="price">R$ 55,90</p>
+                </div>
+            </div>
+            <div class="synopsis">
+                <h3>Sinopse</h3>
+                <p>Durante uma viagem de fim de semana, a filha mais nova de Mackenzie Allen Phillips é raptada e evidências de que ela pode ter sido assassinada são encontradas numa velha cabana. Após quatro anos vivendo numa tristeza profunda causada pela culpa e pela saudade da menina, Mack recebe um estranho bilhete, aparentemente escrito por Deus, convidando-o a voltar à cabana onde acontecera a tragédia. Apesar de desconfiado, ele vai ao local numa tarde de inverno e adentra passo a passo o cenário de seu mais terrível pesadelo. Mas o que ele encontra lá muda o seu destino para sempre.</p>
+            </div>
+            <div class="reviews">
+                <h3>Avaliações</h3>
+                <div class="review">
+                    <div class="review-author">Maria Silva</div>
+                    <div class="rating">★★★★★</div>
+                    <div class="review-text">Este livro mudou minha vida! Uma história emocionante que nos faz refletir sobre perdão e o amor de Deus.</div>
+                </div>
+                <div class="review">
+                    <div class="review-author">João Santos</div>
+                    <div class="rating">★★★★☆</div>
+                    <div class="review-text">Leitura impactante, recomendo a todos que buscam respostas sobre o sofrimento humano.</div>
+                </div>
+            </div>
         </div>
-        <div class="book-title">Confissões</div>
-        <div class="book-author">Editora Principis</div>
     </div>
-    <!-- Livro 10 -->
-    <div class="book" onclick="openModal('modal10')">
-        <div class="book-cover">
-            <img src="./img/rpc.jpg" alt="Capa do livro">
+    
+    <!-- Modal 2 - Casamento Blindado -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+            <div class="book-details">
+                <div class="book-details-cover">
+                    <img src="/91YHxUxR0GL." alt="Capa do livro">
+                </div>
+                <div class="book-info">
+                    <h2></h2>
+                    <h3>Renato e Cristiane Cardoso</h3>
+                    <div class="rating">★★★★☆</div>
+                    <p class="price">R$ 34,90</p>
+                </div>
+            </div>
+            <div class="synopsis">
+                <h3>Sinopse</h3>
+                <p>Casamento Blindado é um livro que aborda os principais desafios enfrentados pelos casais nos dias de hoje e apresenta soluções práticas para superá-los. Com uma abordagem direta e bíblica, os autores mostram como é possível construir um relacionamento forte e duradouro, blindado contra as ameaças que podem destruir um casamento.</p>
+            </div>
+            <div class="reviews">
+                <h3>Avaliações</h3>
+                <div class="review">
+                    <div class="review-author">Ana Paula</div>
+                    <div class="rating">★★★★★</div>
+                    <div class="review-text">Excelente livro! Me ajudou a entender muitos pontos do meu casamento e como melhorar nossa relação.</div>
+                </div>
+                <div class="review">
+                    <div class="review-author">Carlos Eduardo</div>
+                    <div class="rating">★★★★☆</div>
+                    <div class="review-text">Leitura obrigatória para quem quer construir um casamento sólido e feliz.</div>
+                </div>
+            </div>
         </div>
-        <div class="book-title">Razões para Crer</div>
-        <div class="book-author">Editora Cleófas</div>
     </div>
-    <!-- Livro 11 -->
-    <div class="book" onclick="openModal('modal11')">
-        <div class="book-cover">
-            <img src="./img/banquete do cordeiro.jpg" alt="Capa do livro">
+    
+    <!-- Modal 3 - O Peregrino -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+            <div class="book-details">
+                <div class="book-details-cover">
+                    <img src="/71h6Y1aQHBL." alt="Capa do livro">
+                </div>
+                <div class="book-info">
+                    <h2>O Peregrino</h2>
+                    <h3>John Bunyan</h3>
+                    <div class="rating">★★★★★</div>
+                    <p class="price">R$ 29,90</p>
+                </div>
+            </div>
+            <div class="synopsis">
+                <h3>Sinopse</h3>
+                <p>O Peregrino é uma das obras mais importantes da literatura cristã, escrita por John Bunyan enquanto estava preso por pregar o Evangelho. O livro narra a jornada de Cristão, um homem que deixa sua cidade, a Cidade da Destruição, em busca da Cidade Celestial. Ao longo do caminho, ele enfrenta diversos obstáculos e tentações, mas também encontra aliados que o ajudam em sua jornada espiritual.</p>
+            </div>
+            <div class="reviews">
+                <h3>Avaliações</h3>
+                <div class="review">
+                    <div class="review-author">Pedro Henrique</div>
+                    <div class="rating">★★★★★</div>
+                    <div class="review-text">Um clássico atemporal! Cada capítulo traz lições profundas para nossa caminhada cristã.</div>
+                </div>
+                <div class="review">
+                    <div class="review-author">Fernanda Oliveira</div>
+                    <div class="rating">★★★★★</div>
+                    <div class="review-text">Leitura obrigatória para todo cristão. A alegoria é perfeita para entender nossa jornada de fé.</div>
+                </div>
+            </div>
         </div>
-        <div class="book-title">O Banquete do Cordeiro</div>
-        <div class="book-author">Editora Loyola</div>
     </div>
-    <!-- Livro 12 -->
-    <div class="book" onclick="openModal('modal12')">
-        <div class="book-cover">
-            <img src="./img/oaqdav.jpg" alt="Capa do livro">
-        </div>
-        <div class="book-title">O amor que dá a vida</div>
-        <div class="book-author">Editora Quadrante</div>
-    </div>
-    </div>
-
-    <div class="carousel-nav">
-        <button class="carousel-btn" onclick="scrollCarousel('carousel1', -200)">← Anterior</button>
-        <button class="carousel-btn" onclick="scrollCarousel('carousel1', 200)">Próximo →</button>
-    </div>
-
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Livros Cristãos - Todos os direitos reservados</p>
+        <p>Contato: contato@livroscristaos.com.br</p>
+    </footer>
+    
+    <script>
+        // Funções para controle dos modais e carrossel
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        function scrollCarousel(carouselId, scrollAmount) {
+            const carousel = document.getElementById(carouselId);
+            carousel.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Fechar modal ao clicar fora do conteúdo
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
 </body>
 </html>
